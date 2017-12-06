@@ -1,0 +1,23 @@
+    <select>
+        <option value='current'>current</option>
+        <option value='former - Return OK'>former Return OK</option>
+        <option value='former-No Return'>former No Return</option>
+
+    </select>
+
+    <select>
+        <option value='current'>current</option>
+        <option value='former - Return OK'>former Return OK</option>
+        <option value='former-No Return'>former No Return</option>
+
+    </select>
+
+
+    <div id='display'>Click down arrow to make a selection.</div>
+    <script>
+        var select = document.querySelector('select')
+        select.addEventListener('change', function(e){
+            const val = e.target.value
+            document.getElementById('display').innerText = val
+        })
+    </script>
